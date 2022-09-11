@@ -1,12 +1,14 @@
 #include <stdio.h>
-#include <uninstd.h>
 /**
- * main - Entry point
+ * main - entry point
  *
- * Return: Always 1 (Success)
+ * Return: 1
  */
 int main(void)
 {
-	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	/*fprintf() prints to standard error stderr*/
+	fprintf(stderr, "and that piece of art is useful\"");
+	fprintf(stderr, " - Dora Korpar, 2015-10-19\n");
 	return (1);
 }
+
