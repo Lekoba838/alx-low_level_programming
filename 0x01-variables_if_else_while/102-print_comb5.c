@@ -1,9 +1,13 @@
 #include <stdio.h>
 /**
+ * main - entry point
+ *
+ * Description: print
+ *
  * main print possible combination of two 2-digit
  * numbers
  *
- * Return: Always 0 (Success)
+ * Return: Always success
  */
 
 int main(void)
