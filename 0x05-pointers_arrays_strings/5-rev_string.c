@@ -4,15 +4,23 @@
  * rev_string - function that reverses a string
  *
  * @s: reverses a string.
- * Return: always 0
+ * Return: always i0
  */
 
 void rev_string(char *s)
 {
-	char s[10] = "My Soccer";
+	char rev = s[0];
+	int counter = 0;
+	int i;
 
-	printf("%s\n", s);
-	rev_string(s);
-	printf("%s\n", s);
-	return (0);
+	while (s[counter] != '\0')
+		counter++;
+	for (i = 0; i < counter; i++)
+	{
+
+	counter--;
+	rev = s[i];
+	s[i] = s[counter];
+	s[counter] = rev;
+	}
 }
