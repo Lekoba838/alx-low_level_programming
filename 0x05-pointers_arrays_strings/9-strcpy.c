@@ -3,7 +3,7 @@
 /**
  * *_strcpy - copies the string pointed to by src
  * @dest: pointer to str of destination
- * @*src: pointer to str origin
+ * @src: pointer to str origin
  * Return: string
  */
 char *_strcpy(char *dest, char *src)
