@@ -1,5 +1,16 @@
 #include "main.h"
 /**
+ * is_numerical - check if it is a digit
+ * @n: Number
+ *  Return: If is a number, return 1 else return 0
+ *
+ */
+int is_numerical(unsigned int n)
+{
+	return (n >= '0' &&  n <= '9');
+}
+
+/**
  * _atoi - to convert a string to an integer
  * @s: pointer to a character string
  *
@@ -7,25 +18,25 @@
  */
 int _atoi(char *s)
 {
+	unsigned int number, i;
 	int sign;
-	unsigned int num;
-	char *temp;
 
-	temp = s;
-	num = 0;
 	sign = 1;
-	while (*temp != '\0' && (*temp < '0' || *temp > '9'))
+	number = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (*temp == '-')
-			sign *= -1;
-		temp++;
-	}
-	if (*temp != '\0')
+		for (i = 0; s[i] != '\0'; i++)
 	{
-		do {
-			num = num * 10 + (temp - '0');
-			temp++;
-		} while (*temp >= '0' && *temp <= '9');
+		number = (s[i] - 48) + number * 10;
+
+		if (s[i + 1] == ' ')
+			break;
 	}
-	return (num * sign);
+		else if (s[i] == '-')
+	{
+		sign *= -1;
+	}
+	}
+	return (number * sign);
 }
