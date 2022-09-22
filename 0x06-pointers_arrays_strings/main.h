@@ -1,11 +1,13 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 #include <stdio.h>
+
 /**
  * void Prototypes()
  * int Prototypes()
- * char Prototype
+ * char Prototypes()
  */
+
 void reverse_array(int *a, int n)
 void print_number(int n)
 void print_buffer(char *b, int size)
