@@ -13,7 +13,7 @@ int _strlen(char *s)
 	while (*(s + len) != '\0')
 		len++;
 
-	return (0);
+	return (len);
 }
 /**
  * cap_string - function that capitalize first character of a word
