@@ -19,4 +19,5 @@ int _strlen(char *s);
 char *leet(char *);
 char *rot13(char *);
 void print_number(int n);
+int main(void);
 #endif /*MAIN_H*/
