@@ -16,7 +16,7 @@ int is_prime_number(int n)
 }
 
 /**
- * is_prime_number - returns 1 if the input integer is a prime
+ * is_prime - returns 1 if the input integer is a prime
  * @n: number to be checked
  * @start: number to start checking for
  *
