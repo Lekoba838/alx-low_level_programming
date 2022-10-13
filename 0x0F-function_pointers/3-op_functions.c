@@ -1,4 +1,4 @@
-#include "3-op_functions.c"
+#include "3-calc.h"
 
 /**
  * op_add - calculate the sum of two intergers

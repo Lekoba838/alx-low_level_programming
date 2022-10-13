@@ -1,4 +1,4 @@
-#incude "3-get_op_func.c"
+#include "3-calc.h"
 
 /**
  * get_op_func - function pointer that selects the correct function to perform
@@ -12,10 +12,10 @@ int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
-		{"-", op_sun},
+		{"-", op_sub},
 		{"*", op_mul},
 		{"/", op_div},
-		{"%", op_add},
+		{"%", op_mod},
 		{NULL, NULL}
 	};
 	int i;
@@ -28,5 +28,6 @@ int (*get_op_func(char *s))(int, int)
 			return (ops[i].f);
 		i++;
 	}
+
 	return (NULL);
 }
